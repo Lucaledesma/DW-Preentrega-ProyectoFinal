@@ -70,6 +70,18 @@
 
       div {
 
+        form {
+
+          a{
+
+            .boton {
+              margin-bottom: 20px;
+            }
+
+          }
+
+        }
+
         &.bg__sucursal--uno {
           @include alto(30vh);
         }
@@ -94,40 +106,53 @@
 
 @media (min-width: 320px) and (max-width: 576px){
 
-  main {
+  body {
 
     section {
 
-      &.sucursal__img {
-
-        img{
-          @include tam(300px, 300px);
-        }
-
+      .error-img {
+        @include tam(200px, 100px);
       }
+      
+    }
 
-      div {
+    main {
 
-        &.bg__sucursal--uno {
-          @include alto(30vh);
-          margin-bottom: 2rem;
+      section {
+  
+        &.sucursal__img {
+  
+          img{
+  
+            @include tam(300px, 300px);
+  
+          }
+  
         }
-        
-        &.bg__sucursal--dos {
-          @include alto(30vh);
-          margin-top: 2rem;
+  
+        div {
+  
+          &.bg__sucursal--uno {
+            @include alto(30vh);
+            margin-bottom: 2rem;
+          }
+          
+          &.bg__sucursal--dos {
+            @include alto(30vh);
+            margin-top: 2rem;
+          }
+          
+          &.bg__sucursal--tres {
+            @include alto(30vh);
+            margin-bottom: 2rem
+          }
+          
+          &.bg__sucursal--cuatro {
+            @include alto(30vh);
+            margin-top: 2rem;
+          }
+  
         }
-        
-        &.bg__sucursal--tres {
-          @include alto(30vh);
-          margin-bottom: 2rem
-        }
-        
-        &.bg__sucursal--cuatro {
-          @include alto(30vh);
-          margin-top: 2rem;
-        }
-
       }
     }
   }

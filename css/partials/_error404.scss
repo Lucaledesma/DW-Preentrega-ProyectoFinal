@@ -1,0 +1,14 @@
+
+body {
+    background: $bg-coralGarden;
+
+    section {
+
+        .error-img {
+            @include tam(500px, 300px);
+            @extend .animacion-error;
+        }
+        
+    }
+
+}

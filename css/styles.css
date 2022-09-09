@@ -171,6 +171,55 @@
   background-size: cover;
 }
 
+.animacion-error, body section .error-img {
+  -webkit-animation: wobble-hor-bottom 3s infinite;
+          animation: wobble-hor-bottom 3s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes wobble-hor-bottom {
+  0%, 100% {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
 .icons-footer, footer div a i.footer__instagram, footer div a i.footer__twitter, footer div a i.footer__youtube {
   font-size: 35px;
   color: #fff;
@@ -311,21 +360,6 @@ main section h3.h3-servicio {
   background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
   color: white;
 }
-main section div {
-  /*&.servicio__img--first {
-      @extend .servicio-carousel;
-      background-image: url("../assets/img/bg/service.jpg");
-  }
-
-  &.servicio__img--second {
-      @extend .servicio-carousel;
-      background-image: url("../assets/img/bg/service-2.jpeg");
-  }
-
-  &.card-wh {
-      @include tam(30rem, 15rem);
-  }*/
-}
 main section div.servicio-info {
   background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
   box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
@@ -406,6 +440,14 @@ main .bg-contacto {
   background-color: #01000f;
 }
 
+body {
+  background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+}
+body section .error-img {
+  width: 500px;
+  height: 300px;
+}
+
 footer.bg-footer {
   background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
 }
@@ -452,6 +494,9 @@ footer div a i.footer__instagram:hover {
   }
 }
 @media (max-width: 767.98px) {
+  main section div form a .boton {
+    margin-bottom: 20px;
+  }
   main section div.bg__sucursal--uno {
     height: 30vh;
   }
@@ -466,23 +511,27 @@ footer div a i.footer__instagram:hover {
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
-  main section.sucursal__img img {
+  body section .error-img {
+    width: 200px;
+    height: 100px;
+  }
+  body main section.sucursal__img img {
     width: 300px;
     height: 300px;
   }
-  main section div.bg__sucursal--uno {
+  body main section div.bg__sucursal--uno {
     height: 30vh;
     margin-bottom: 2rem;
   }
-  main section div.bg__sucursal--dos {
+  body main section div.bg__sucursal--dos {
     height: 30vh;
     margin-top: 2rem;
   }
-  main section div.bg__sucursal--tres {
+  body main section div.bg__sucursal--tres {
     height: 30vh;
     margin-bottom: 2rem;
   }
-  main section div.bg__sucursal--cuatro {
+  body main section div.bg__sucursal--cuatro {
     height: 30vh;
     margin-top: 2rem;
   }
