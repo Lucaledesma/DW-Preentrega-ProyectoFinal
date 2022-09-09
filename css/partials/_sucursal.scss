@@ -1,0 +1,82 @@
+main {
+
+    section {
+        
+        &.sucursal__img {
+
+            img{
+                @include tam(350px, 350px);
+            }
+
+        }
+
+        div {
+
+            &.bg__sucursal--uno {
+                @extend .background-sucursal;
+                background-image: url("../assets/img/logo/sucursal1.jpg");
+            }
+
+            &.bg__sucursal--dos {
+                @extend .background-sucursal;
+                background-image: url("../assets/img/logo/sucursal2.jpg");
+            }
+
+            &.bg__sucursal--tres {
+                @extend .background-sucursal;
+                background-image: url("../assets/img/logo/sucursal3.jpg");
+            }
+
+            &.bg__sucursal--cuatro {
+                @extend .background-sucursal;
+                background-image: url("../assets/img/logo/sucursal4.jpg");
+            }
+
+            &.sucursal__item {
+                position: relative;
+                box-shadow: $shadow;
+                transition: all .4s;
+
+                &:hover {
+                    border: 1rem solid $color-coralgarden;
+                }
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include tam(100%, 100%);
+                    background-color: #0000007c;
+                }
+
+            }
+
+            h2 {
+
+                &.h2-sucursal {
+                    z-index: 1;
+                }
+
+                &::selection {
+                    background-color: #a3daf1;
+                    color: #185767;
+                }
+
+            }
+
+            iframe {
+
+                &.sucursal__maps {
+                    transition: transform .35s;
+                    box-shadow: $shadow;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    } 
+                }
+            }
+
+        }
+    }
+}

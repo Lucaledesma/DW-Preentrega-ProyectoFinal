@@ -1,0 +1,145 @@
+@media (max-width: 1200px) {
+  main {
+
+    section {
+
+      &.servicio-grid {
+        gap: 1rem;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  main {
+
+    section {
+
+      &.sucursal__img {
+
+        img{
+          @include tam(500px, 400px);
+        }
+
+      }
+
+      div {
+
+        &.bg__sucursal--uno {
+          @include alto(40vh);
+        }
+        
+        &.bg__sucursal--dos {
+          @include alto(40vh);
+        }
+        
+        &.bg__sucursal--tres {
+          @include alto(40vh);
+        }
+        
+        &.bg__sucursal--cuatro {
+          @include alto(40vh);
+        }
+
+      }
+
+      h3 {
+
+        &.h3-informacion {
+          @include ancho(50%);
+        }
+
+        &.h3-servicio {
+          @include ancho(65%);
+        }
+
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  main {
+
+    section {
+
+      div {
+
+        &.bg__sucursal--uno {
+          @include alto(30vh);
+        }
+        
+        &.bg__sucursal--dos {
+          @include alto(30vh);
+        }
+        
+        &.bg__sucursal--tres {
+          @include alto(30vh);
+        }
+        
+        &.bg__sucursal--cuatro {
+          @include alto(30vh);
+        }
+
+      }
+
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px){
+
+  main {
+
+    section {
+
+      &.sucursal__img {
+
+        img{
+          @include tam(300px, 300px);
+        }
+
+      }
+
+      div {
+
+        &.bg__sucursal--uno {
+          @include alto(30vh);
+          margin-bottom: 2rem;
+        }
+        
+        &.bg__sucursal--dos {
+          @include alto(30vh);
+          margin-top: 2rem;
+        }
+        
+        &.bg__sucursal--tres {
+          @include alto(30vh);
+          margin-bottom: 2rem
+        }
+        
+        &.bg__sucursal--cuatro {
+          @include alto(30vh);
+          margin-top: 2rem;
+        }
+
+      }
+    }
+  }
+
+  .index__img {
+    order: -1;
+  }
+
+  .index__info {
+    order: 1; 
+    @include alto(25rem);
+    overflow: scroll;
+  }
+  
+}

@@ -1,0 +1,42 @@
+footer {
+
+    &.bg-footer {
+        background: $bg-coralGarden;
+    }
+
+    div {
+ 
+        a {
+
+            i {
+
+                &.footer__youtube {
+                    @extend .icons-footer;
+    
+                    &:hover {
+                        color: map-get($color-redes , "youtube" );
+                        font-size: $fs-iconFooter;
+                    }
+                }
+    
+                &.footer__twitter {
+                    @extend .icons-footer;
+    
+                    &:hover {
+                        color: map-get($color-redes , "twitter" );
+                        font-size: $fs-iconFooter;
+                    }
+                }
+    
+                &.footer__instagram {
+                    @extend .icons-footer;
+    
+                    &:hover {
+                        color: map-get($color-redes , "instagram" );
+                        font-size: $fs-iconFooter;
+                    }
+                }
+            }
+        }
+    }
+}

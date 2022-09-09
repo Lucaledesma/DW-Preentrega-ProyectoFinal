@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-top {
+  0% {
+    transform: rotateX(-80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes efecto_twitter {
+  0% {
+    font-size: 1.6rem;
+    color: #4caad5;
+  }
+  50% {
+    font-size: 1.8rem;
+    color: #4caad5;
+  }
+  100% {
+    font-size: 1.6rem;
+    color: #4caad5;
+  }
+}
+@keyframes efecto_twitter {
+  0% {
+    font-size: 1.6rem;
+    color: #4caad5;
+  }
+  50% {
+    font-size: 1.8rem;
+    color: #4caad5;
+  }
+  100% {
+    font-size: 1.6rem;
+    color: #4caad5;
+  }
+}
+@-webkit-keyframes efecto_instagram {
+  0% {
+    font-size: 1.6rem;
+    color: #c65ab5;
+  }
+  50% {
+    font-size: 1.8rem;
+    color: #dab745;
+  }
+  100% {
+    font-size: 1.6rem;
+    color: #c65ab5;
+  }
+}
+@keyframes efecto_instagram {
+  0% {
+    font-size: 1.6rem;
+    color: #c65ab5;
+  }
+  50% {
+    font-size: 1.8rem;
+    color: #dab745;
+  }
+  100% {
+    font-size: 1.6rem;
+    color: #c65ab5;
+  }
+}
+.transition, header nav a.title, header nav a.logo {
+  transition: transform 0.3s;
+}
+
+.background-informacion, main section div.bg-informacion, main section h3.h3-informacion {
+  background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+  color: white;
+  transition: all 0.35s;
+}
+
+.servicio-carousel {
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+.icons-servicio, main section a i.iconTwitter, main section a i.iconInstagram {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #01000f;
+}
+
+.background-sucursal, main section div.bg__sucursal--cuatro, main section div.bg__sucursal--tres, main section div.bg__sucursal--dos, main section div.bg__sucursal--uno {
+  background-position: center center;
+  background-size: cover;
+}
+
+.icons-footer, footer div a i.footer__instagram, footer div a i.footer__twitter, footer div a i.footer__youtube {
+  font-size: 35px;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+*::-moz-selection {
+  background-color: #a3daf1;
+  color: #000020;
+}
+*::selection {
+  background-color: #a3daf1;
+  color: #000020;
+}
+
+h2 {
+  font-family: "Fredoka One", cursive;
+  color: #01000f;
+}
+h2::-moz-selection {
+  background-color: white;
+  color: #185767;
+}
+h2::selection {
+  background-color: white;
+  color: #185767;
+}
+
+header nav.bg-header {
+  background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+}
+header nav a.logo:hover {
+  transform: scale(1.1);
+}
+header nav a.title:hover {
+  transform: scale(1.05);
+}
+header nav a.nav-animate--logo {
+  -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+header nav div ul li:nth-child(1) {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+header nav div ul li:nth-child(2) {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+header nav div ul li:nth-child(3) {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+header nav div ul li:nth-child(4) {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+header nav div ul li:nth-child(5) {
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+header nav div ul li a.nav-link:hover {
+  color: #ffffff;
+  transition: all 0.7s;
+}
+
+main {
+  background-image: url("../assets/img/bg/bg-main.png");
+}
+main .hero__main {
+  -webkit-animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+          animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+main section > div video.index__video {
+  -webkit-animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: flip-in-hor-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  border-radius: 20px;
+}
+main section > div .bg-index {
+  background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+}
+main section > div .img-index {
+  transition: all 0.3s;
+}
+main section > div .img-index:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+}
+
+main section.informacion__img img {
+  width: 250px;
+  height: 250px;
+}
+main section h3.h3-informacion {
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+}
+main section div.informacion-card:hover {
+  transform: scale(1.15);
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+}
+
+main section .servicio {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+main section .border-radius {
+  border-radius: 20px;
+}
+main section.bg-servicio {
+  background: linear-gradient(90deg, rgb(72, 175, 172) 0%, rgb(72, 175, 172) 27%, rgb(255, 255, 255) 71%);
+}
+main section.servicio__img img {
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+  transition: transform 0.3s;
+}
+main section.servicio__img img:hover {
+  transform: scale(1.05);
+}
+main section h3.h3-servicio {
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+  background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+  color: white;
+}
+main section div {
+  /*&.servicio__img--first {
+      @extend .servicio-carousel;
+      background-image: url("../assets/img/bg/service.jpg");
+  }
+
+  &.servicio__img--second {
+      @extend .servicio-carousel;
+      background-image: url("../assets/img/bg/service-2.jpeg");
+  }
+
+  &.card-wh {
+      @include tam(30rem, 15rem);
+  }*/
+}
+main section div.servicio-info {
+  background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+  transition: transform 0.3s;
+}
+main section div.servicio-info:hover {
+  transform: scale(1.05);
+}
+main section iframe.servicio__iframe {
+  transition: all 0.2s;
+}
+main section iframe.servicio__iframe:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+}
+main section a i.iconInstagram:hover {
+  -webkit-animation: efecto_instagram 0.7s ease-in-out infinite both;
+          animation: efecto_instagram 0.7s ease-in-out infinite both;
+}
+main section a i.iconTwitter:hover {
+  -webkit-animation: efecto_twitter 0.7s ease-in-out infinite both;
+          animation: efecto_twitter 0.7s ease-in-out infinite both;
+}
+
+main section.sucursal__img img {
+  width: 350px;
+  height: 350px;
+}
+main section div.bg__sucursal--uno {
+  background-image: url("../assets/img/logo/sucursal1.jpg");
+}
+main section div.bg__sucursal--dos {
+  background-image: url("../assets/img/logo/sucursal2.jpg");
+}
+main section div.bg__sucursal--tres {
+  background-image: url("../assets/img/logo/sucursal3.jpg");
+}
+main section div.bg__sucursal--cuatro {
+  background-image: url("../assets/img/logo/sucursal4.jpg");
+}
+main section div.sucursal__item {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+  transition: all 0.4s;
+}
+main section div.sucursal__item:hover {
+  border: 1rem solid #01000f;
+}
+main section div.sucursal__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4862745098);
+}
+main section div h2.h2-sucursal {
+  z-index: 1;
+}
+main section div h2::-moz-selection {
+  background-color: #a3daf1;
+  color: #185767;
+}
+main section div h2::selection {
+  background-color: #a3daf1;
+  color: #185767;
+}
+main section div iframe.sucursal__maps {
+  transition: transform 0.35s;
+  box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
+}
+main section div iframe.sucursal__maps:hover {
+  transform: scale(1.05);
+}
+
+main .bg-contacto {
+  background-color: #01000f;
+}
+
+footer.bg-footer {
+  background: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+}
+footer div a i.footer__youtube:hover {
+  color: #ff4242;
+  font-size: 45px;
+}
+footer div a i.footer__twitter:hover {
+  color: #61dfff;
+  font-size: 45px;
+}
+footer div a i.footer__instagram:hover {
+  color: #ff9cfd;
+  font-size: 45px;
+}
+
+@media (max-width: 1200px) {
+  main section.servicio-grid {
+    gap: 1rem;
+  }
+}
+@media (max-width: 991.98px) {
+  main section.sucursal__img img {
+    width: 500px;
+    height: 400px;
+  }
+  main section div.bg__sucursal--uno {
+    height: 40vh;
+  }
+  main section div.bg__sucursal--dos {
+    height: 40vh;
+  }
+  main section div.bg__sucursal--tres {
+    height: 40vh;
+  }
+  main section div.bg__sucursal--cuatro {
+    height: 40vh;
+  }
+  main section h3.h3-informacion {
+    width: 50%;
+  }
+  main section h3.h3-servicio {
+    width: 65%;
+  }
+}
+@media (max-width: 767.98px) {
+  main section div.bg__sucursal--uno {
+    height: 30vh;
+  }
+  main section div.bg__sucursal--dos {
+    height: 30vh;
+  }
+  main section div.bg__sucursal--tres {
+    height: 30vh;
+  }
+  main section div.bg__sucursal--cuatro {
+    height: 30vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  main section.sucursal__img img {
+    width: 300px;
+    height: 300px;
+  }
+  main section div.bg__sucursal--uno {
+    height: 30vh;
+    margin-bottom: 2rem;
+  }
+  main section div.bg__sucursal--dos {
+    height: 30vh;
+    margin-top: 2rem;
+  }
+  main section div.bg__sucursal--tres {
+    height: 30vh;
+    margin-bottom: 2rem;
+  }
+  main section div.bg__sucursal--cuatro {
+    height: 30vh;
+    margin-top: 2rem;
+  }
+  .index__img {
+    order: -1;
+  }
+  .index__info {
+    order: 1;
+    height: 25rem;
+    overflow: scroll;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,18 @@
+* {
+    font-family: $fontGeneral;
+
+    &::selection {
+        background-color: #a3daf1;
+        color: #000020;
+    }
+}
+
+h2 {
+    font-family: $fontH2;
+    color: $color-coralgarden;
+
+    &::selection {
+        background-color: #ffff;
+        color: #185767;
+    }
+}

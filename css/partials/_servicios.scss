@@ -1,0 +1,104 @@
+main {
+
+    section {
+
+        .servicio{
+            box-shadow: $shadow-service;
+        }
+
+        .border-radius {
+            border-radius: 20px;
+        }
+
+        &.bg-servicio {
+            background: $bg-servicios;
+        }
+
+        &.servicio__img {
+
+            img {
+                box-shadow: $shadow;
+                transition: transform .3s;
+                 &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+
+        h3 {
+
+            &.h3-servicio {
+                @include ancho(25%);
+                box-shadow: $shadow;
+                background: $bg-coralGarden;
+                color: white;
+            }
+
+        }
+
+        div {
+
+            &.servicio-info {
+                background: $bg-coralGarden;
+                box-shadow: $shadow;
+                transition: transform .3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            /*&.servicio__img--first {
+                @extend .servicio-carousel;
+                background-image: url("../assets/img/bg/service.jpg");
+            }
+
+            &.servicio__img--second {
+                @extend .servicio-carousel;
+                background-image: url("../assets/img/bg/service-2.jpeg");
+            }
+
+            &.card-wh {
+                @include tam(30rem, 15rem);
+            }*/
+
+        }
+
+        iframe {
+
+            &.servicio__iframe{
+                transition: all .2s;
+
+                &:hover {
+                    transform: scale(1.03);
+                    box-shadow: $shadow;
+                }
+            }
+
+        }
+
+        a {
+
+            i{
+
+                &.iconInstagram {
+                    @extend .icons-servicio;
+
+                    &:hover {
+                        animation: $animacion_instagram;
+                    }
+                }
+    
+                &.iconTwitter {
+                    @extend .icons-servicio;
+
+                    &:hover {
+                        animation: $animacion_twitter;
+                    }
+                }
+            }
+
+        }
+    }
+}

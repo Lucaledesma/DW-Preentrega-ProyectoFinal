@@ -1,0 +1,39 @@
+main {
+
+    section {
+        
+        &.informacion__img {
+
+            img {
+                @include tam(250px, 250px);
+            }
+        }
+
+        h3 {
+
+            &.h3-informacion {
+                @extend .background-informacion;
+                @include ancho(25%);
+                box-shadow: $shadow;
+            }
+
+        }
+
+        div {
+
+            &.bg-informacion {
+                @extend .background-informacion;
+            }
+
+            &.informacion-card {
+
+                &:hover {
+                    transform: scale(1.15);
+                    box-shadow: $shadow;
+                }
+            }
+
+        }
+    }
+    
+}

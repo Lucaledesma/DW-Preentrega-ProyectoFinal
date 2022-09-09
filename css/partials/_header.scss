@@ -1,0 +1,60 @@
+header {
+
+    nav {
+
+        &.bg-header {
+            background: $bg-coralGarden;
+        }
+
+        a {
+
+            &.logo {
+                @extend .transition;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &.title {
+                @extend .transition;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            &.nav-animate--logo {
+                animation: $animacion-logo;
+                animation-delay: .3s;
+            }
+
+        }
+
+        div {
+
+            ul {
+
+                li{
+
+                    @for $i from 1 through 5 {
+                    
+                        &:nth-child(#{$i}){
+                            animation: $animacion-li;
+                            animation-delay: $i*0.1s;
+                        }
+    
+                    }
+
+                    a {
+
+                        &.nav-link:hover {
+                            color: #ffffff;
+                            transition: all .7s;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

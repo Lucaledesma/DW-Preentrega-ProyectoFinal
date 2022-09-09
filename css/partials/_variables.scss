@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+// Fonts
+$fontGeneral: 'Josefin Sans', sans-serif;
+$fontH2: 'Fredoka One', cursive;
+
+$fs-iconFooter: 45px;
+
+// Backgrounds
+$bg-coralGarden: linear-gradient(90deg, #083642 0%, #04202f 28%, #061527 56%, #01000f 100%);
+$bg-servicios: linear-gradient(90deg, rgba(72,175,172,1) 0%, rgba(72,175,172,1) 27%, rgba(255,255,255,1) 71%);
+
+// Animaciones - Shadows
+$animacion-logo: tracking-in-expand 1s cubic-bezier(.215,.61,.355,1.000) both;
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+$animacion-li: slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+@keyframes slide-in-top{0%{transform:translateY(-1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+
+$animacion-hero: swing-in-top-fwd 3s cubic-bezier(.175,.885,.32,1.275) both;
+@keyframes swing-in-top-fwd{0%{transform:rotateX(-100deg);transform-origin:top;opacity:0}100%{transform:rotateX(0deg);transform-origin:top;opacity:1}}
+
+$animacion-video: flip-in-hor-top .5s cubic-bezier(.25,.46,.45,.94) both;
+@keyframes flip-in-hor-top{0%{transform:rotateX(-80deg);opacity:0}100%{transform:rotateX(0);opacity:1}}
+
+$animacion_twitter: efecto_twitter .7s ease-in-out infinite both;
+@keyframes efecto_twitter{0%{font-size: 1.6rem;color:#4caad5;}50%{font-size: 1.8rem;color:#4caad5;}100%{font-size: 1.6rem;color:#4caad5;}}
+
+$animacion_instagram: efecto_instagram .7s ease-in-out infinite both;
+@keyframes efecto_instagram{0%{font-size: 1.6rem;color:#c65ab5;}50%{font-size: 1.8rem;color:#dab745;}100%{font-size: 1.6rem;color:#c65ab5;}}
+
+$shadow: #0000004d 0px 19px 38px, #00000038 0px 15px 12px;
+$shadow-service: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+
+// Colores
+$color-coralgarden: #01000f;
+
+$color-redes: (
+    "logo": #fff,
+    "youtube": #ff4242,
+    "twitter": #61dfff,
+    "instagram": #ff9cfd,
+);
+
+//Extends
+.transition {
+    transition: transform .3s;
+};
+
+.background-informacion {
+    background: $bg-coralGarden;
+    color: white;
+
+    transition: all .35s;
+};
+
+.servicio-carousel {
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+};
+
+.icons-servicio {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-coralgarden;
+};
+
+.background-sucursal {
+    background-position: center center;
+    background-size: cover;
+};
+
+.icons-footer {
+    font-size: 35px;
+    color: map-get($color-redes , "logo" );
+    transition: all .3s;
+};
+
+//Mixins
+@mixin tam($w, $h) {
+    width: $w;
+    height: $h;
+};
+
+@mixin ancho($w) {
+    width: $w;
+};
+
+@mixin alto($h) {
+    height: $h;
+};
+

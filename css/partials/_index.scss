@@ -1,0 +1,30 @@
+main {
+
+    section {
+
+        > div {
+
+            video {
+
+                &.index__video {
+                    animation: $animacion-video;
+                    border-radius: 20px;
+                }
+                  
+            }
+
+            .bg-index {
+                background: $bg-coralGarden;
+            }
+              
+            .img-index {
+                transition: all .3s;
+
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: $shadow;
+                }
+            }
+        }
+    }
+}
