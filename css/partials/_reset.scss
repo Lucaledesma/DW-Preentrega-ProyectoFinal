@@ -16,3 +16,7 @@ h2 {
         color: #185767;
     }
 }
+
+p {
+    @extend .text-justify;
+}

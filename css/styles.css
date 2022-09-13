@@ -220,6 +220,10 @@
   }
 }
 
+.text-justify, p {
+  text-align: justify;
+}
+
 .icons-footer, footer div a i.footer__instagram, footer div a i.footer__twitter, footer div a i.footer__youtube {
   font-size: 35px;
   color: #fff;
@@ -336,9 +340,6 @@ main section h3.h3-informacion {
 main section div.informacion-card:hover {
   transform: scale(1.15);
   box-shadow: rgba(0, 0, 0, 0.3019607843) 0px 19px 38px, rgba(0, 0, 0, 0.2196078431) 0px 15px 12px;
-}
-main section div p.text-justify {
-  text-align: justify;
 }
 
 main section .servicio {
